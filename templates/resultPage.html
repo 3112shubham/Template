@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="{ url_for('static', filename='Blue, white and green Medical care logo.png') }" alt="">
+    </a>
+    <ul class="navlist">
+      <li><a href="#">About</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="right-content">
+      <a href="#" class="nav-btn">Sign In</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <section class="result-section">
+        <h2>Medical Document Fraud Check Result</h2>
+        <div class="result-container">
+          <p>{{prediction}}</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Medical Document Fraud Checker</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
