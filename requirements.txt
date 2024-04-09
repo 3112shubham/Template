@@ -1,0 +1,4 @@
+easyocr
+Flask
+requests
+pandas
