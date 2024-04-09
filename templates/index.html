@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Document Fraud Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="{{ url_for('static', filename='Blue, white and green Medical care logo.png') }}" alt="">
+    </a>
+    <ul class="navlist">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="right-content">
+      <a href="#" class="nav-btn">Sign In</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <section class="upload-section">
+        <h2>Upload or Scan Your Medical Document</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" id="h11" name="file">
+                <label for="h11">Choose File</label>
+            </div>
+            <input type="submit" class="btn" value="Check for Fraud">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Medical Document Fraud Checker</p>
+    </footer>
+  </div>
+
+</body>
+</html>
